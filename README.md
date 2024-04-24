@@ -29,10 +29,15 @@ Framework
 ---
 
 Prepare the environment
+
 - Create the project folder
+
 - Open the Visual Studio Code using the project folder as the base
+
 - Open Azure Cloud Shell (https://portal.azure.com/#cloudshell/)
+
 - Create a resource group for the resources needed for this exercise
+
 ```
 az account list-locations --output table
 CURRENTMOMENT="20240423172000"
@@ -51,6 +56,7 @@ az cosmosdb keys list --resource-group ${RESOURCEGROUP} --name ${COSMOSDBNAME}
 ```
 
 Configure and code the console application
+
 - Create a folder for the project and change it to the folder
 ```
 md az204-cosmos
@@ -174,6 +180,7 @@ public class CosmosClientOrchestration
 ```
 
 Publish the code
+
 - Create the repository Lab-Azure-AzureCosmosDB-ClientLibraryConsoleApp
 
 - Generate a new specific/dedicated personal access token (Fine-grained tokens)
@@ -204,8 +211,11 @@ git push origin
 ```
 
 Clean up resources
+
 - In the “search resources, services, and doc”, type and select Resource Groups
+
 - Click on the resource group created
+
 - Select Delete resource group and follow the directions to delete the resource group and all of the resources it contains
 
 ### Media
